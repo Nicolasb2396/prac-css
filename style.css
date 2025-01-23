@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    color: #333;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #000080;
+}
+
+header .destacado {
+    font-size: 4em;
+    color: black;
+}
+
+.navegacion-horizontal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.navegacion-horizontal li {
+    display: flex;
+    align-items: center;
+}
+
+.enlace-nav {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.navegacion-horizontal li:hover .enlace-nav {
+    background-color: yellow;  /* Cambia el fondo a amarillo cuando se pasa el cursor */
+}
+
+.separador {
+    border-left: 2px solid #ccc;
+    height: 20px;
+    margin: 0 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.enlaces ul {
+    padding: 0;
+    list-style: none;
+}
+
+.enlaces ul li {
+    margin-bottom: 10px;
+}
+
+.enlaces ul li a {
+    text-decoration: underline;
+    color: blue;
+    font-weight: bold;
+}
+
+.enlaces ul li a:visited {
+    color: purple;
+}
+
+.productos ul {
+    counter-reset: contador-productos;
+    padding-left: 0;
+    list-style: none;
+}
+
+.productos ul li {
+    counter-increment: contador-productos;
+    margin: 5px 0;
+}
+
+.productos ul li::before {
+    content: counter(contador-productos) ". ";
+    color: red;
+    font-weight: bold;
+}
+.stevie2-img img {
+    max-width: 50%; 
+    height: auto;
+}
+
+.informacion p::first-line,
+.informacion-adicional p::first-line {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.stevie2-img {
+    text-align: center;
+    margin-top: -400px;
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ccc;
+    display: block;
+    float: right; 
+}
+
+
