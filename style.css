@@ -43,7 +43,7 @@ header .destacado {
 }
 
 .navegacion-horizontal li:hover .enlace-nav {
-    background-color: yellow;  /* Cambia el fondo a amarillo cuando se pasa el cursor */
+    background-color: yellow;  
 }
 
 .separador {
@@ -71,10 +71,12 @@ hr {
     text-decoration: underline;
     color: blue;
     font-weight: bold;
+    background-color: white;
 }
 
 .enlaces ul li a:visited {
     color: purple;
+    background-color: darkblue;
 }
 
 .productos ul {
